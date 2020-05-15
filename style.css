@@ -182,8 +182,9 @@ main {
     width: 730px;
 }
 
-i {
+.point i {
     color: rgba(253, 192, 12);
+    padding-top: 25px;
 
 }
 
