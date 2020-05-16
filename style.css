@@ -70,25 +70,11 @@ aside {
     color: rgba(49, 49, 49);
 }
 
-.icone1 {
+.icone {
     display: inline-block;
     border-radius: 50%;
     border: 2px solid rgba(49, 49, 49);
-    padding: 0.6em 0.5em 0.6em 0.5em;
-}
-
-.icone2 {
-    display: inline-block;
-    border-radius: 50%;
-    border: 2px solid rgba(49, 49, 49);
-    padding: 0.6em 0.5em 0.6em 0.5em;
-}
-
-.icone3 {
-    display: inline-block;
-    border-radius: 50%;
-    border: 2px solid rgba(49, 49, 49);
-    padding: 0.6em 0.5em 0.6em 0.5em;
+    padding: 17px 13px;
 }
 
 aside h3 {
@@ -229,7 +215,7 @@ main i {
     width: 396px;
 }
 
-@media only screen and (max-width:1201px) {
+@media only screen and (max-width:1200px) {
     body {
         margin: 0px;
         padding: 0px;
@@ -254,6 +240,12 @@ main i {
     .nom h1 {
         padding-right: 0px;
         margin-bottom: 0px;
+        font-size: 4em;
+    }
+
+    header h2 {
+
+        font-size: 2em;
     }
 
     .nom {
@@ -263,6 +255,11 @@ main i {
     .titre {
         width: 95%;
         margin: auto;
+    }
+
+    .titre h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
     }
 
     .formation {
@@ -286,23 +283,25 @@ main i {
         margin: auto;
         padding: 0px;
         text-align: center;
+        border-bottom: 0.1em dotted rgba(49, 49, 49);
     }
 
     .point {
         margin: auto;
-        padding: 20px 0px 0px 0px;
-        text-align: center;
+        padding: 0px 0px 0px 0px;
+
     }
 
     .point i {
-        margin: auto;
+        margin: auto 15px;
         padding: 0px 0px 0px 0px;
         font-size: large;
     }
 
     .point p {
-        margin: auto;
+
         text-align: start;
+        font-size: 1.2em;
     }
 
     .recommandation {
@@ -321,9 +320,13 @@ main i {
         padding-top: 40px;
         padding-bottom: 0px;
     }
+
+    .icone {
+        padding: 17px 10px;
+    }
 }
 
-@media only screen and (max-width:601px) {
+@media screen and (max-width: 600px) and (min-width: 320px) {
     body {
         margin: 0px;
         padding: 0px;
@@ -357,6 +360,10 @@ main i {
     .titre {
         width: 100%;
         margin: auto;
+    }
+
+    .titre h2 {
+        font-size: 1.7em;
     }
 
     .formation {
@@ -383,22 +390,7 @@ main i {
         border-bottom: 0.1em dotted rgba(49, 49, 49);
     }
 
-    .point {
-        margin: auto;
-        padding: 20px 0px 0px 0px;
-        text-align: center;
-    }
 
-    .point i {
-        margin: auto;
-        padding: 0px 0px 0px 0px;
-        font-size: large;
-    }
-
-    .point p {
-        margin: auto;
-        text-align: start;
-    }
 
     .recommandation {
         width: 100%;
@@ -411,9 +403,19 @@ main i {
         text-align: center;
     }
 
+    aside h3 {
+        font-size: 2em;
+    }
+
+    footer h3 {
+        font-size: 2em;
+    }
+
     .icones {
         font-size: 1.7em;
         padding-top: 40px;
         padding-bottom: 0px;
     }
+
+
 }
