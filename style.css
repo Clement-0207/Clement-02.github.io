@@ -29,13 +29,11 @@ body {
 }
 
 main {
-
     width: 70%;
     margin: 0 auto;
     font-family: 'raleway', 'Times New Roman', Times, Arial, Helvetica, sans-serif;
 }
 
-/*partie gauche*/
 aside {
     background: rgba(253, 192, 12);
     display: flex;
@@ -77,14 +75,17 @@ aside {
     padding: 17px 13px;
 }
 
-aside h3,
-footer h3 {
+aside h3 {
     background: rgba(49, 49, 49);
     color: rgba(253, 192, 12);
     text-align: center;
     font-family: 'raleway-bold', 'Times New Roman', Times, Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 4px;
+    font-size: 1.5em;
+}
+
+aside footer h3 {
     font-size: 1.5em;
 }
 
@@ -228,7 +229,7 @@ main i {
         flex-flow: column-reverse wrap;
         padding: 0px;
         margin: auto;
-        width: 100%;
+        width: 95%;
     }
 
     main {
@@ -238,14 +239,17 @@ main i {
         text-align: center;
     }
 
+    main h3 {
+        font-size: 2em;
+    }
+
     .nom h1 {
         padding-right: 0px;
         margin-bottom: 0px;
-        font-size: 4em;
+        font-size: 6em;
     }
 
     header h2 {
-
         font-size: 2em;
     }
 
@@ -288,26 +292,28 @@ main i {
     }
 
     .point {
+        width: auto;
         margin: auto;
         padding: 0px 0px 0px 0px;
+        font-size: 1.3vw;
 
     }
 
     .point i {
         margin: auto 15px;
         padding: 0px 0px 0px 0px;
-        font-size: large;
+        font-size: 2.5em;
     }
 
     .point p {
 
         text-align: start;
-        font-size: large;
+        font-size: 2em;
     }
 
     .recommandation {
         width: 47.5%;
-        font-size: large;
+        font-size: 1.5em;
     }
 
     aside {
@@ -317,9 +323,17 @@ main i {
         text-align: center;
     }
 
+    aside h3 {
+        font-size: 2.2em;
+    }
+
+    aside footer h3 {
+        font-size: 2.2em;
+    }
+
     .icones {
         font-size: 1.7em;
-        padding-top: 40px;
+        padding-top: 0px;
         padding-bottom: 0px;
     }
 
@@ -392,8 +406,6 @@ main i {
         border-bottom: 0.1em dotted rgba(49, 49, 49);
     }
 
-
-
     .recommandation {
         width: 100%;
     }
@@ -405,19 +417,9 @@ main i {
         text-align: center;
     }
 
-    aside h3 {
-        font-size: 2em;
-    }
-
-    footer h3 {
-        font-size: 2em;
-    }
-
     .icones {
         font-size: 1.7em;
         padding-top: 40px;
         padding-bottom: 0px;
     }
-
-
 }
