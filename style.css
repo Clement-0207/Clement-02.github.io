@@ -14,6 +14,11 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
     border: 1px solid black;
     font-size: medium;
     margin: auto;
@@ -30,21 +35,26 @@ main {
     font-family: 'raleway', 'Times New Roman', Times, Arial, Helvetica, sans-serif;
 }
 
-
 /*partie gauche*/
-.container {
+aside {
     background: rgba(253, 192, 12);
     display: flex;
     flex-direction: column;
     width: 30%;
-
 }
 
 .contact p {
     overflow-wrap: break-word;
     padding-left: 40px;
     padding-right: 40px;
+}
 
+.contact {
+    width: 100%;
+}
+
+.propos {
+    width: 100%;
 }
 
 .propos p {
@@ -54,7 +64,6 @@ main {
 }
 
 .icones {
-
     display: flex;
     justify-content: space-around;
     padding-bottom: 30px;
@@ -82,7 +91,7 @@ main {
     padding: 0.6em 0.5em 0.6em 0.5em;
 }
 
-.container h3 {
+aside h3 {
     background: rgba(49, 49, 49);
     color: rgba(253, 192, 12);
     text-align: center;
@@ -90,21 +99,19 @@ main {
     font-weight: bold;
     padding: 4px;
     font-size: 1.5em;
-
 }
 
 .photo img {
-
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    margin-bottom: 10px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 3px 3px 6px rgba(129, 100, 5, 0.6);
-
+    box-shadow: 0px 0px 8px rgb(48, 47, 47);
 }
 
 .photo {
@@ -119,8 +126,6 @@ main {
 .loisirs i {
     color: rgba(49, 49, 49);
 }
-
-
 
 /*partie droite*/
 h1 {
@@ -168,7 +173,6 @@ main {
     text-align: justify;
 }
 
-
 .point {
     display: flex;
     flex-direction: row;
@@ -185,13 +189,11 @@ main {
 .point i {
     color: rgba(253, 192, 12);
     padding-top: 25px;
-
 }
 
 main .titre i {
     color: rgba(253, 192, 12);
     font-size: 1.3em;
-
 }
 
 main .titre {
@@ -227,58 +229,191 @@ main i {
     width: 396px;
 }
 
-@media only screen and (max-width:1205px) {
+@media only screen and (max-width:1201px) {
     body {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 600px;
-        border: none;
-    }
-
-    main {
-        margin: center;
-        width: 600px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    main header {
-        text-align: center;
-    }
-
-    main .titre {
-        border-bottom: 2px solid rgba(253, 192, 12);
-        text-align: center;
-        width: 600px;
-    }
-
-    .texte {
-        max-width: 500px;
-        padding-left: 2px;
-        padding-right: 2px;
-        text-align: justify;
-    }
-
-    main .point {
-        width: 200px;
-        text-align: justify;
+        margin: 0px;
+        padding: 0px;
     }
 
     .container {
-        width: auto;
-    }
-
-    .photo img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .recommandations {
+        border: none;
         display: flex;
-        justify-content: space-around;
+        flex-flow: column-reverse wrap;
+        padding: 0px;
+        margin: auto;
+        width: 100%;
+    }
+
+    main {
+        margin: auto;
+        padding: 0px;
+        width: 95%;
+        text-align: center;
+    }
+
+    .nom h1 {
+        padding-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .nom {
+        margin-bottom: 0px;
+    }
+
+    .titre {
+        width: 95%;
+        margin: auto;
+    }
+
+    .formation {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: justify;
+    }
+
+    .experience {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: justify;
+    }
+
+    .texte {
+        width: 95%;
+        margin: auto;
+        padding: 0px;
+        text-align: center;
     }
 
     .point {
-        padding-right: 30px;
+        margin: auto;
+        padding: 20px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .point i {
+        margin: auto;
+        padding: 0px 0px 0px 0px;
+        font-size: large;
+    }
+
+    .point p {
+        margin: auto;
+        text-align: start;
+    }
+
+    .recommandation {
+        width: 47.5%;
+    }
+
+    aside {
+        margin: auto;
+        padding: 0px;
+        width: 95%;
+        text-align: center;
+    }
+
+    .icones {
+        font-size: 1.7em;
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:601px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container {
+        border: none;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        padding: 0px;
+        margin: auto;
+        width: 100%;
+    }
+
+    main {
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nom h1 {
+        padding-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .nom {
+        margin-bottom: 0px;
+    }
+
+    .titre {
+        width: 100%;
+        margin: auto;
+    }
+
+    .formation {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: justify;
+    }
+
+    .experience {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: justify;
+    }
+
+    .texte {
+        width: 80%;
+        margin: auto;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        border-bottom: 0.1em dotted rgba(49, 49, 49);
+    }
+
+    .point {
+        margin: auto;
+        padding: 20px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .point i {
+        margin: auto;
+        padding: 0px 0px 0px 0px;
+        font-size: large;
+    }
+
+    .point p {
+        margin: auto;
+        text-align: start;
+    }
+
+    .recommandation {
+        width: 100%;
+    }
+
+    aside {
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .icones {
+        font-size: 1.7em;
+        padding-top: 40px;
+        padding-bottom: 0px;
     }
 }
