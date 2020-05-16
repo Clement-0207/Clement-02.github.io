@@ -323,7 +323,7 @@ main i {
     }
 }
 
-@media only screen and (max-width:601px) {
+@media only screen and (max-width:500px) {
     body {
         margin: 0px;
         padding: 0px;
