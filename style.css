@@ -77,7 +77,8 @@ aside {
     padding: 17px 13px;
 }
 
-aside h3 {
+aside h3,
+footer h3 {
     background: rgba(49, 49, 49);
     color: rgba(253, 192, 12);
     text-align: center;
@@ -301,11 +302,12 @@ main i {
     .point p {
 
         text-align: start;
-        font-size: 1.2em;
+        font-size: large;
     }
 
     .recommandation {
         width: 47.5%;
+        font-size: large;
     }
 
     aside {
