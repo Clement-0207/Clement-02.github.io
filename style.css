@@ -126,6 +126,9 @@ h2 {
 
 main h3 {
     font-family: 'Raleway', 'Times New Roman', Times, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 main {
@@ -179,6 +182,10 @@ main {
     padding-top: 25px;
 }
 
+.point p {
+    font-weight: bold;
+}
+
 main .titre i {
     color: rgba(253, 192, 12);
     font-size: 1.3em;
@@ -207,6 +214,15 @@ main i {
     text-align: justify;
 }
 
+.texte p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.texte .st {
+    font-size: 15px;
+}
+
 .recommandations {
     display: flex;
     flex-direction: row;
@@ -215,6 +231,10 @@ main i {
 
 .recommandation {
     width: 396px;
+}
+
+.recommandation .adress {
+    font-weight: bold;
 }
 
 @media only screen and (max-width:1200px) {
@@ -229,28 +249,19 @@ main i {
         flex-flow: column-reverse wrap;
         padding: 0px;
         margin: auto;
-        width: 95%;
+        width: 100%;
     }
 
     main {
         margin: auto;
         padding: 0px;
-        width: 95%;
+        width: 100%;
         text-align: center;
-    }
-
-    main h3 {
-        font-size: 2em;
     }
 
     .nom h1 {
         padding-right: 0px;
         margin-bottom: 0px;
-        font-size: 6em;
-    }
-
-    header h2 {
-        font-size: 2em;
     }
 
     .nom {
@@ -258,17 +269,16 @@ main i {
     }
 
     .titre {
-        width: 95%;
+        width: 100%;
         margin: auto;
     }
 
     .titre h2 {
-        font-size: 2em;
         margin-bottom: 15px;
     }
 
     .formation {
-        width: 95%;
+        width: 100%;
         margin: auto;
         display: flex;
         flex-flow: column wrap;
@@ -276,7 +286,7 @@ main i {
     }
 
     .experience {
-        width: 95%;
+        width: 100%;
         margin: auto;
         display: flex;
         flex-flow: column wrap;
@@ -284,55 +294,51 @@ main i {
     }
 
     .texte {
-        width: 95%;
+        width: 80%;
         margin: auto;
-        padding: 0px;
         text-align: center;
         border-bottom: 0.1em dotted rgba(49, 49, 49);
+    }
+
+    .texte p {
+        padding: 0px 20px 0px 20px;
+        text-align: center justify;
     }
 
     .point {
         width: auto;
         margin: auto;
         padding: 0px 0px 0px 0px;
-        font-size: 1.3vw;
 
     }
 
     .point i {
         margin: auto 15px;
         padding: 0px 0px 0px 0px;
-        font-size: 2.5em;
+
     }
 
     .point p {
 
         text-align: start;
-        font-size: 2em;
     }
 
     .recommandation {
         width: 47.5%;
-        font-size: 1.5em;
     }
 
     aside {
         margin: auto;
         padding: 0px;
-        width: 95%;
+        width: 100%;
         text-align: center;
     }
 
-    aside h3 {
-        font-size: 2.2em;
-    }
-
-    aside footer h3 {
-        font-size: 2.2em;
+    .propos p {
+        text-align: center;
     }
 
     .icones {
-        font-size: 1.7em;
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -342,10 +348,11 @@ main i {
     }
 }
 
-@media screen and (max-width: 600px) and (min-width: 320px) {
+@media only screen and (max-width:599px) {
     body {
         margin: 0px;
         padding: 0px;
+
     }
 
     .container {
@@ -376,10 +383,6 @@ main i {
     .titre {
         width: 100%;
         margin: auto;
-    }
-
-    .titre h2 {
-        font-size: 1.7em;
     }
 
     .formation {
@@ -418,7 +421,6 @@ main i {
     }
 
     .icones {
-        font-size: 1.7em;
         padding-top: 40px;
         padding-bottom: 0px;
     }
