@@ -300,12 +300,13 @@ main i {
         margin: auto;
         text-align: center;
         border-bottom: 0.1em dotted rgba(49, 49, 49);
+        padding-left: 0;
     }
 
     .texte p {
         width: 100%;
-        padding: 0px 20px 0px 20px;
-        text-align: center justify;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
     }
 
     .point {
@@ -416,15 +417,33 @@ main i {
         width: 100%;
     }
 
+    .recommandations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        margin-bottom: -50px;
+    }
+
     aside {
         margin: auto;
         padding: 0px;
         width: 100%;
         text-align: center;
+
     }
 
     .icones {
         padding-top: 40px;
         padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+    body {
+        width: 108%;
+        margin: 0;
     }
 }
