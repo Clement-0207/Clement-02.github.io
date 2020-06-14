@@ -191,6 +191,13 @@ header h1 {
 }
 
 /*mentions*/
+.menus > h3 {
+  font-size: 3em;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .menu.mentions {
   width: 100%;
   height: auto;
@@ -707,6 +714,13 @@ aside .p.point3 {
     width: auto;
   }
 
+  .menus {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: auto;
+  }
+
   footer {
     width: auto;
     display: block;
@@ -730,17 +744,8 @@ aside .p.point3 {
   }
 
   /*mentions légales*/
-  .menus {
-    width: 350px;
-  }
-  .menus .mentions {
-    overflow: auto;
-  }
-  .menus .mentions .contenuml {
-    text-align: justify;
-  }
-  .menus h3 {
-    text-align: center;
+  .menus > h3 {
+    font-size: 2em;
   }
 
   /*menu note*/
@@ -865,8 +870,8 @@ aside .p.point3 {
     padding: 0 30px;
   }
   .menus-delice .menu.delice .dessert p {
-    width: 80%;
-    padding: 0 0 0 30px;
+    padding: 0;
+    width: 100%;
     line-height: 1.7em;
   }
   .menus-delice .menu.delice .dessert p.prix {

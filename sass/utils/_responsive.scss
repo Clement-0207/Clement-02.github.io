@@ -5,6 +5,13 @@
         width: auto;
     }
 
+    .menus {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: auto;
+    }
+
     footer {
         width: auto;
         display: block;
@@ -31,20 +38,8 @@
     }
 
     /*mentions légales*/
-    .menus {
-        width: 350px;
-
-        & .mentions {
-            overflow: auto;
-
-            & .contenuml {
-                text-align: justify;
-            }
-        }
-
-        & h3 {
-            text-align: center;
-        }
+    .menus>h3 {
+        font-size: 2em;
     }
 
     /*menu note*/
@@ -205,8 +200,8 @@
 
         & .dessert {
             & p {
-                width: 80%;
-                padding: 0 0 0 30px;
+                padding: 0;
+                width: 100%;
                 line-height: 1.7em;
 
                 &.prix {
