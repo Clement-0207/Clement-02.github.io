@@ -181,6 +181,11 @@ header h1 {
   height: auto;
   padding: 10px 35px 0 35px;
 }
+.menu.mentions h3 {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+}
 .menu.mentions .contenuml {
   padding: 0;
   font-style: italic;
