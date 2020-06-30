@@ -24,7 +24,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #fff url(img/pageload-spinner.gif) no-repeat center center
+    background: #fff url("img/pageload-spinner.gif") no-repeat center center
 }
 
 .bloc {
@@ -195,7 +195,12 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5)
+    color: rgba(0, 0, 0, .8)
+}
+
+.d-bloc .panel,
+.l-bloc em {
+    color: rgba(0, 0, 0, .9)
 }
 
 .d-bloc .panel button:hover,
