@@ -401,6 +401,11 @@ footer .col-sm-12 a:hover {
     text-decoration: underline
 }
 
+#form_1 {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
 #bloc-5-cta h2 {
     opacity: 100%;
     font-weight: 700;
@@ -640,7 +645,7 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: rgba(0, 0, 0, .4);
     box-shadow: none
 }
 
@@ -784,8 +789,7 @@ h6,
 label,
 p {
     font-family: helvetica;
-    font-weight: 400;
-    color: #424242 !important
+    color: #161616 !important
 }
 
 .container {
@@ -811,8 +815,9 @@ p {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     padding-top: 50px;
+    text-align: center;
 }
 
 .tight-width-whitespace {
@@ -857,7 +862,7 @@ h3 {
 }
 
 h1 {
-    color: #333 !important
+    color: rgb(0, 0, 0) !important
 }
 
 h4 {
