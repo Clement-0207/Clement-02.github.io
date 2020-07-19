@@ -79,8 +79,7 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-12">
-						<form id="form_1"
-							fail-msg="Désolé il semblerait que notre service mail ne réponde pas. Désolé pour cet inconvénient!">
+						<form id="form_1" novalidate>
 							<div class="form-group"><label for="name">Nom </label><input id="name" name="nom"
 									class="form-control" type="text" autofocus="autofocus" required />
 							</div>
@@ -92,7 +91,7 @@
 									required />
 							</div>
 							<div class="form-group"><label for="project">Brief de votre projet (Ajoutez
-									autant de détails que nécessaire)<br></label><textarea id="project" name="projet"
+									autant de détails que nécessaire)<br></label><textarea id="project"
 									class="form-control" rows="4" cols="50" required></textarea></div><button
 								class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								type="submit">Envoyer </button>
