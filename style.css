@@ -1048,8 +1048,8 @@ h4 {
     }
 
     .bloc {
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right)
+        padding-left: initial;
+        padding-right: initial;
     }
 
     .bloc-group,
@@ -1061,8 +1061,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-bottom-edge,
     .bloc-fill-screen .fill-bloc-top-edge {
         padding: 0 20px;
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right)
+        padding-left: initial;
+        padding-right: initial;
     }
 }
 
