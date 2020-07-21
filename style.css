@@ -10,7 +10,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: 0 !important
+    outline: rgb(171, 105, 75) solid 0.1px !important
 }
 
 a:hover {
@@ -840,7 +840,8 @@ p {
 }
 
 .social {
-    margin: auto auto auto auto
+    margin: auto auto auto auto;
+    padding: 5px 5px
 }
 
 h2 {
@@ -925,7 +926,9 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #f3976c;
-    color: #333 !important
+    color: #333 !important;
+    outline: rgb(171, 105, 75) solid 2px !important;
+    border-radius: initial
 }
 
 .btn-atomic-tangerine:hover {
