@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/css/style.css" />
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	<title>MVP-Orinoco-panier</title>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<div class="col-md-4 px-0">
+					<img src="images/logoorinoco.jpg" class="img-logo" alt="enseigne">
+				</div>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+					class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="panier.html">
+							Panier</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="panierVide" class="container col-lg-12 text-center h3 alert alert-warning">
+		Panier vide !!!
+	</div>
+	<div id="panierPlein" class="container">
+		<table class="table table-striped">
+			<tbody>
+				<tr>
+					<td>
+						<div class="card col-sm-12">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table product-table">
+										<thead class="mdb-color lighten-5">
+											<tr>
+												<th class="font-weight-bold">
+													<strong>Produit</strong>
+												</th>
+												<th class="font-weight-bold">
+													<strong>Nom</strong>
+												</th>
+												<th class="text-center font-weight-bold">
+													<strong>Prix</strong>
+												</th>
+												<th class="font-weight-bold">
+													<strong>Quantité</strong>
+												</th>
+												<th class="font-weight-bold">
+													<strong>Supp</strong>
+												</th>
+											</tr>
+										</thead>
+										<tbody id="produits">
+											<tr>
+												<td colspan="1" class="text-left">
+												</td>
+												<td>
+													<h4 class="mt-2"><strong>Total</strong></h4>
+												</td>
+												<td class="text-right">
+													<h4 class="mt-2"><strong id="total-euro"></strong></h4>
+												</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</td>
+
+					<td class="form-panier">
+						<form id="contact" name="contact" class="needs-validation" novalidate>
+
+							<div class="form-row">
+								<div class="col-md mb-1">
+									<label for="validationNom">Nom</label>
+									<input type="text" class="form-control" id="validationNom" name="nom"
+										placeholder="Nom" value="" required>
+									<div class="valid-feedback">
+										Correct !
+									</div>
+									<div class="invalid-feedback">
+										Ce champ est invalide !
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="col-md mb-1">
+									<label for="validationPrenom">Prénom</label>
+									<input type="text" class="form-control" id="validationPrenom" name="prenom"
+										placeholder="Prénom" value="" required>
+									<div class="valid-feedback">
+										Correct !
+									</div>
+									<div class="invalid-feedback">
+										Ce champ est invalide !
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="col-md mb-1">
+									<label for="validationAdresse">Adresse</label>
+									<input type="text" class="form-control" id="validationAdresse" name="adresse"
+										placeholder="Adresse" value="" required>
+									<div class="valid-feedback">
+										Correct !
+									</div>
+									<div class="invalid-feedback">
+										Ce champ est invalide !
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="col-md mb-1">
+									<label for="validationVille">Ville</label>
+									<input type="text" class="form-control" name="ville" value="" id="validationVille"
+										placeholder="Ville" required>
+									<div class="valid-feedback">
+										Correct !
+									</div>
+									<div class="invalid-feedback">
+										Ce champ est invalide !
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="col-md mb-3">
+									<label for="validationEmail">Email</label>
+									<input type="email" class="form-control" name="email" value="" id="validationEmail"
+										placeholder="email" required>
+									<div class="valid-feedback">
+										Correct !
+									</div>
+									<div class="invalid-feedback">
+										Ce champ est invalide !
+									</div>
+								</div>
+							</div>
+
+							<button class="btn btn-primary" type="submit">Commander</button>
+
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<footer>
+	</footer>
+	<script src="panier.js"></script>
+</body>
+
+</html>
